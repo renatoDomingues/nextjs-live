@@ -8,9 +8,9 @@ const Post = (props) => {
     return(
         <>
             <h1> SSG (Post) {props.post?.title} </h1>
-            <button onClick={() => setShow(old => !old)}> Toggle </button>
+            <button onClick={() => setShow((old) => !old)}> Toggle </button>
             {
-                show && <p> {props.post.userId} </p>
+                show && <p> {props.posts.userId} </p>
             }            
         </>
     )
